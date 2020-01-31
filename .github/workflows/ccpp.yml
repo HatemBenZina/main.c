@@ -1,19 +1,11 @@
-name: C/C++ CI
-
-on: [push]
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-    
-    steps:
-    - uses: actions/checkout@v2
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+int main()
+{
+  int i;
+  for (i = 0; i < 10; i++)
+  for (i = 0; i < 32; i++)
+  {
+    printf("Holberton\n");
+    printf("Hello Holberton\n");
+  }
+  return 0;
+}
